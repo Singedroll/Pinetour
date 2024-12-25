@@ -1,11 +1,21 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "montserrat";
 }
 .container {
   display: flex;
   justify-content: center;
-  margin-top: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
+}
+.header-background {
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .heroheadline {
   text-align: center;
@@ -48,10 +58,13 @@
   height: 800px;
 }
 .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 358px;
   height: 796px;
-  gap: 80px;
-  margin: 0;
+  gap: 1px;
   margin-right: 160px;
 }
 .right {
@@ -66,6 +79,7 @@
   padding: 0;
   width: 100%;
   font-size: x-large;
+  font-weight: bold;
 }
 .tourinfofont {
   text-align: start;
@@ -79,6 +93,7 @@
 .destination-list-top {
   display: flex;
   justify-content: start;
+  margin: 0;
 }
 .destination-list-item {
   background-color: black;
@@ -90,23 +105,25 @@
   color: #16a94a;
   width: 36px;
   height: 36px;
+  font-weight: bold;
 }
 .grid-container {
-  margin-left: 12px;
   display: flex;
   flex-direction: column;
 }
 .destinationfont {
   padding: 5px;
   text-align: left;
-  font-size: x-large;
-  font-weight: 700px;
+  font-size: medium;
+  font-weight: bold;
   color: black;
+  margin-left: 20px;
 }
 .locationfont {
   padding: 5px;
   text-align: left;
   color: grey;
+  margin-left: 20px;
 }
 
 .destination-list-middle {
@@ -117,7 +134,7 @@
   display: flex;
   width: 1px;
   height: 40px;
-  border-right: 1px black dashed;
+  border-right: 2px black dashed;
 }
 .test1 {
   display: flex;
@@ -148,7 +165,7 @@
 }
 .price-headline {
   text-align: center;
-  font-size: 62px;
+  font-size: 72px;
   font-weight: 700;
   padding: 0;
   margin-top: 40px;
@@ -160,5 +177,155 @@
   justify-content: center;
   margin-top: 0 auto;
 }
-.stater-pack {
+.pricing-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 1200px;
+}
+.pricing-header {
+  color: grey;
+  font-size: 26px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  margin-top: 300px;
+}
+.pricing-title {
+  font-size: 62px;
+  font-weight: bold;
+  margin-bottom: 80px;
+  margin-top: 20px;
+}
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 250px;
+  height: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: 2px solid transparent;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-color: #18ba51;
+}
+
+.card h2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 25px;
+}
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+.card ul li {
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+.card .price {
+  font-size: 24px;
+  display: flex;
+  font-weight: bold;
+  margin-bottom: 20px;
+  align-items: end;
+  justify-content: end;
+  margin-right: 20px;
+}
+.card button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.card button:hover {
+  background-color: #009624;
+  border: #009624;
+}
+.footer {
+  background-color: #171717;
+  color: white;
+  padding: 50px 0;
+  text-align: center;
+  margin: 0;
+  margin-top: 220px;
+  padding: 190px 0px 190px 0px;
+}
+.footer .footer-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer .order-button {
+  background-color: #00c853;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.social-wrapper {
+  margin: 0 auto;
+  background-color: #101010;
+}
+.social-container {
+  display: flex;
+  width: 100%;
+  height: 150px;
+  justify-content: space-around;
+}
+
+.social-box {
+  width: 380px;
+  height: 150px;
+}
+
+.one {
+  color: white;
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+.two {
+  color: white;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  gap: 20px;
+}
+.social-icon-background {
+  width: 180px;
+  background-color: #303030;
+  gap: 10px;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  border-radius: 4px;
+}
+.icon-res {
+  width: 21.12px;
+  height: 21.12px;
 }
